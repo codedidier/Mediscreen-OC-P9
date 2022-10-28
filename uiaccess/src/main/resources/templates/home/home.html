@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org" xmlns:overflow="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="UTF-8">
+  <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+          crossorigin="anonymous"
+  >
+  <link rel="stylesheet" href="../mainStyle.css" />
+  <title>Home - Mediscreen </title>
+</head>
+<body>
+<!-- NAVIGATION-BAR -->
+<section>
+  <!-- First Block -->
+  <nav id="navMenu" class="navbar navbar-expand-lg navbar-light bg-white p-0 m-0">
+    <div class="flex-row-reverse">
+      <img class="m-0 width-0" src="../Logo_Mediscreen.jpeg" alt="" width="300">
+    </div>
+  </nav>
+  <!-- Home / Transfer -->
+  <div id="navBar" class="navbar-expand-lg p-5 position-relative">
+    <h1 class="position-absolute top-50 start-50 translate-middle" >Liste des patients Mediscreen</h1>
+  </div>
+</section>
+
+
+<!-- MAIN -->
+<main th:object="${dto}"><br>
+  <div style="width:100%;height:757px;overflow:scroll;">
+  <table >
+    <thead >
+    <tr  >
+
+      <th  class="col20">FirstName</th>
+      <th  class="col20">LastName</th>
+      <th  class="col10">Gender</th>
+      <th  class="col20">Date of Birth</th>
+      <th  class="col20">Phone Number</th>
+      <th  class="col30">Address</th>
+      <th  class="col30">updating the patient file</th>
+
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="patient : ${dto.patients}">
+
+      <td th:text="${patient.firstName}"></td>
+      <td th:text="${patient.lastName}"></td>
+      <td th:text="${patient.gender}"></td>
+      <td th:text="${patient.dateOfBirth}"></td>
+      <td th:text="${patient.phone}"></td>
+      <td th:text="${patient.address}"></td>
+      <td>
+        <a class="btn btn-primary col-12" type="" th:href="@{/patient/{id}(id=${patient.id})}">Update</a>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+  <br>
+<div align="center"><a class="btn btn-primary" th:href="@{patient}">Ajout de patient</a></div>
+</main>
+</body>
+</html>

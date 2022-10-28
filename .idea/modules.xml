@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/Mediscreen-OC-P9.iml" filepath="$PROJECT_DIR$/.idea/Mediscreen-OC-P9.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mspatient/mspatient.iml" filepath="$PROJECT_DIR$/mspatient/mspatient.iml" />
+      <module fileurl="file://$PROJECT_DIR$/uiaccess/uiaccess.iml" filepath="$PROJECT_DIR$/uiaccess/uiaccess.iml" />
+    </modules>
+  </component>
+</project>
