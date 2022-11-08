@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/Mediscreen-OC-P9.iml" filepath="$PROJECT_DIR$/.idea/Mediscreen-OC-P9.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mshistory/mshistory.iml" filepath="$PROJECT_DIR$/mshistory/mshistory.iml" />
       <module fileurl="file://$PROJECT_DIR$/mspatient/mspatient.iml" filepath="$PROJECT_DIR$/mspatient/mspatient.iml" />
       <module fileurl="file://$PROJECT_DIR$/uiaccess/uiaccess.iml" filepath="$PROJECT_DIR$/uiaccess/uiaccess.iml" />
     </modules>
