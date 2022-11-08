@@ -1,4 +1,4 @@
-package com.codedidier.mspatient.controller;
+package com.codedidier.mspatient.config.controller;
 
 import com.codedidier.mspatient.entity.Patient;
 import com.codedidier.mspatient.service.PatientService;

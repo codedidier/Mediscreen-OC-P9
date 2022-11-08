@@ -1,4 +1,4 @@
-package com.codedidier.mspatient.config;
+package com.codedidier.mshistory.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -9,6 +9,9 @@ import springfox.documentation.spi.DocumentationType;
 import springfox.documentation.spring.web.plugins.Docket;
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
+/**
+ * Enable Swagger module (api specification)
+ */
 @EnableSwagger2
 @Configuration
 public class SwaggerConfig {
@@ -20,7 +23,7 @@ public class SwaggerConfig {
     public Docket api() {
         return new Docket(DocumentationType.SWAGGER_2)
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("com.codedidier.mspatient.controller"))
+                .apis(RequestHandlerSelectors.basePackage("com.codedidier.mshistory.controller"))
                 .paths(PathSelectors.any())
                 .build();
     }

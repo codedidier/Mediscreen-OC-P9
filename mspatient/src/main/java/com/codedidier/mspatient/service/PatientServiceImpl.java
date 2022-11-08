@@ -2,11 +2,13 @@ package com.codedidier.mspatient.service;
 
 import com.codedidier.mspatient.entity.Patient;
 import com.codedidier.mspatient.exception.PatientNotFoundException;
+import com.codedidier.mspatient.exception.PersonAlreadyExistException;
 import com.codedidier.mspatient.repository.PatientRepository;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 
 /**
  * Service qui gère les patients
@@ -42,6 +44,14 @@ public class PatientServiceImpl implements PatientService {
      */
     @Override
     public Patient savePatient(Patient patient) {
+        Optional<Patient> optional = patientRepository.findOneByFirstNameAndLastName(
+                patient.getFirstName(),
+                patient.getLastName());
+        if (optional.isPresent()) {
+            throw new PersonAlreadyExistException(
+                    patient.getFirstName(),
+                    patient.getLastName());
+        }
         Patient patientCreated = patientRepository.save(patient);
         log.debug("service : create patient : " + patient);
         return patientCreated;
@@ -65,7 +75,7 @@ public class PatientServiceImpl implements PatientService {
     }
 
     /**
-     * Supprime un patient dans la base de donnée
+     * Supprime un patient dans la base de donnée par son ID
      */
     @Override
     public void deletePatient(long id) {
