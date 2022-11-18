@@ -15,6 +15,7 @@ public interface PatientProxy {
 
     @GetMapping("/api/patient/all")
     List<PatientModel> allPatients();
+
     @PostMapping("/api/patient/add")
     PatientModel savePatient(@RequestBody @Valid PatientModel patient);
 

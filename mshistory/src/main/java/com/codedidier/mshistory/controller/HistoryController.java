@@ -39,7 +39,7 @@ public class HistoryController {
     @GetMapping("/all/{patientId}")
     public ResponseEntity<List<Note>> listNote(@PathVariable("patientId") Integer patientId) {
         List<Note> notes = historyService.findAllNotesByPatientId(patientId);
-        log.debug("controller : get the list of all note by patientId");
+        log.debug("controller : obtenir la liste de toutes les notes par le patientId");
         return ResponseEntity.ok().body(notes);
     }
 
@@ -50,7 +50,7 @@ public class HistoryController {
     @GetMapping("/{id}")
     public ResponseEntity<Note> getNoteById(@PathVariable String id) {
         Note note = historyService.getNoteById(id);
-        log.debug("controller : get note by id : " + id);
+        log.debug("controller : obtenir une note par l'id : " + id);
         return ResponseEntity.ok().body(note);
     }
 
@@ -74,16 +74,5 @@ public class HistoryController {
         Note noteUpdated = historyService.updateNote(id, note);
         log.debug("controller : mise à jour des notes : " + noteUpdated);
         return ResponseEntity.ok().body(noteUpdated);
-    }
-
-    /**
-     * Supprime une note par son ID
-     */
-    @ApiOperation(value = "Supprime une note par son ID")
-    @DeleteMapping("/delete/{id}")
-    public ResponseEntity<String> deleteNote(@PathVariable String id) {
-        historyService.deleteNote(id);
-        log.debug("controller : note avec l'id supprimée: " + id);
-        return ResponseEntity.ok().body("Success, note supprimée");
     }
 }

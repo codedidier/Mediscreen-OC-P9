@@ -12,7 +12,6 @@
   <title>Home - Mediscreen </title>
 </head>
 <body>
-<!-- NAVIGATION-BAR -->
 <section>
   <!-- First Block -->
   <nav id="navMenu" class="navbar navbar-expand-lg navbar-light bg-white p-0 m-0">
@@ -24,8 +23,9 @@
   <div id="navBar" class="navbar-expand-lg p-5 position-relative">
     <h1 class="position-absolute top-50 start-50 translate-middle" >Liste des patients Mediscreen</h1>
   </div>
-</section>
+</section><br>
 
+<div align="center"><a class="btn btn-primary" th:href="@{patient}">Ajout d'un nouveau patient</a></div>
 
 <!-- MAIN -->
 <main th:object="${dto}"><br>
@@ -33,19 +33,22 @@
   <table >
     <thead >
     <tr  >
-
+      <th  class="col20">update patient</th>
       <th  class="col20">FirstName</th>
       <th  class="col20">LastName</th>
       <th  class="col10">Gender</th>
       <th  class="col20">Date of Birth</th>
       <th  class="col20">Phone Number</th>
-      <th  class="col30">Address</th>
-      <th  class="col30">updating the patient file</th>
+      <th  class="col50">Address</th>
+      <th  class="col20">Voir les notes</th>
 
     </tr>
     </thead>
     <tbody>
     <tr th:each="patient : ${dto.patients}">
+      <td>
+        <a class="btn btn-primary col-12" type="" th:href="@{/patient/{id}(id=${patient.id})}">Update"Patient"</a>
+      </td>
 
       <td th:text="${patient.firstName}"></td>
       <td th:text="${patient.lastName}"></td>
@@ -54,14 +57,12 @@
       <td th:text="${patient.phone}"></td>
       <td th:text="${patient.address}"></td>
       <td>
-        <a class="btn btn-primary col-12" type="" th:href="@{/patient/{id}(id=${patient.id})}">Update</a>
+        <a class="btn btn-primary col-12" type="" th:href="@{/history/{id}(id=${patient.id})}">Voir les notes</a>
       </td>
     </tr>
     </tbody>
   </table>
 </div>
-  <br>
-<div align="center"><a class="btn btn-primary" th:href="@{patient}">Ajout de patient</a></div>
 </main>
 </body>
 </html>
