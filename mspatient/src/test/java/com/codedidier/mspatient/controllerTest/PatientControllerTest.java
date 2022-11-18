@@ -1,10 +1,5 @@
 package com.codedidier.mspatient.controllerTest;
 
-import static org.hamcrest.CoreMatchers.is;
-import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
-
 import com.codedidier.mspatient.entity.Patient;
 import com.codedidier.mspatient.repository.PatientRepository;
 import com.codedidier.mspatient.service.PatientServiceImpl;
@@ -16,7 +11,11 @@ import org.springframework.http.MediaType;
 import org.springframework.test.web.servlet.MockMvc;
 
 import java.time.LocalDate;
-import static org.junit.jupiter.api.Assertions.*;
+
+import static org.hamcrest.CoreMatchers.is;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 @SpringBootTest
 @AutoConfigureMockMvc
 public class PatientControllerTest {
@@ -24,7 +23,7 @@ public class PatientControllerTest {
     public MockMvc mvc;
 
     @Autowired
-    PatientServiceImpl patientServiceImpl;
+    PatientServiceImpl patientService;
 
     @Autowired
     PatientRepository patientRepository;
@@ -45,7 +44,7 @@ public class PatientControllerTest {
 
     @Test
     void home() throws Exception {
-        mvc.perform(get("/"))
+        mvc.perform(get("/api/patient/"))
                 .andExpect(status().isOk())
                 .andExpect(jsonPath("$",
                         is("Welcome to MsPatient API !")));
@@ -56,7 +55,7 @@ public class PatientControllerTest {
         patientRepository.deleteAll();
         Patient patient = getPrenomTest();
         patientRepository.save(patient);
-        mvc.perform(get("/all"))
+        mvc.perform(get("/api/patient/all"))
                 .andExpect(status().isOk())
                 .andExpect(jsonPath("$[0].firstName",
                         is("PrenomTest")));
@@ -67,7 +66,7 @@ public class PatientControllerTest {
         patientRepository.deleteAll();
         Patient patient = getPrenomTest();
         patientRepository.save(patient);
-        mvc.perform(get("/1"))
+        mvc.perform(get("/api/patient/1"))
                 .andExpect(status().isOk())
                 .andExpect(jsonPath("$.firstName",
                         is("PrenomTest")));
@@ -76,7 +75,7 @@ public class PatientControllerTest {
     @Test
     void getPatientByIdException() throws Exception {
         patientRepository.deleteAll();
-        mvc.perform(get("/188"))
+        mvc.perform(get("/api/patient/188"))
                 .andExpect(status().isBadRequest())
                 .andExpect(jsonPath("$",
                         is("this id : 188, not found in database")));
@@ -93,7 +92,7 @@ public class PatientControllerTest {
                     +"\"address\" : \"1 Ma Rue\","
                     +"\"phone\": \"06-06-06-06-06\"}";
 
-        mvc.perform(post("/add")
+        mvc.perform(post("/api/patient/add")
                         .contentType(MediaType.APPLICATION_JSON)
                         .content(newPatient))
                 .andExpect(status().isOk())
@@ -114,7 +113,7 @@ public class PatientControllerTest {
                 +"\"address\" : \"1 Ma Rue\","
                 +"\"phone\": \"06-06-06-06-06\"}";
 
-        mvc.perform(put("/update/"+save.getId())
+        mvc.perform(put("/api/patient/update/"+save.getId())
                         .contentType(MediaType.APPLICATION_JSON)
                         .content(updatePatient))
                 .andExpect(status().isOk())

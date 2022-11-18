@@ -7,19 +7,23 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="mshistory" />
         <module name="mspatient" />
+        <module name="mshistory" />
         <module name="uiaccess" />
+        <module name="msassess" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
+    <bytecodeTargetLevel target="11">
+      <module name="Mediscreen-OC-P9" target="11" />
+      <module name="msassess" target="11" />
       <module name="mshistory" target="11" />
-      <module name="mspatient" target="15" />
+      <module name="mspatient" target="11" />
       <module name="uiaccess" target="11" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="msassess" options="-parameters" />
       <module name="mshistory" options="-parameters" />
       <module name="mspatient" options="-parameters" />
       <module name="uiaccess" options="-parameters" />

@@ -14,5 +14,4 @@ public interface HistoryService {
 
     Note updateNote(String id, Note note);
 
-    void deleteNote(String id);
 }

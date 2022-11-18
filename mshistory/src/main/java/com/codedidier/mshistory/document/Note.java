@@ -23,7 +23,7 @@ public class Note {
     private Integer patientId;
 
     /**
-     * Recommendation de médecins
+     * Recommendation des médecins
      */
     private String recommendation;
 }

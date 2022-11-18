@@ -27,7 +27,7 @@ public class PatientServiceImpl implements PatientService {
      */
     @Override
     public List<Patient> getAllPatients() {
-        log.debug("service : get the list of all patients");
+        log.debug("service : Récupère la liste de tous les patients");
         return patientRepository.findAll();
     }
     /**
@@ -35,7 +35,7 @@ public class PatientServiceImpl implements PatientService {
      */
     @Override
     public Patient getPatientById(long id) {
-        log.debug("service : get patient by id : " + id);
+        log.debug("service : Récupère un patient par son ID : " + id);
         return getById(id);
     }
 
@@ -53,7 +53,7 @@ public class PatientServiceImpl implements PatientService {
                     patient.getLastName());
         }
         Patient patientCreated = patientRepository.save(patient);
-        log.debug("service : create patient : " + patient);
+        log.debug("service : Ajouter un patient : " + patient);
         return patientCreated;
     }
 
@@ -72,16 +72,6 @@ public class PatientServiceImpl implements PatientService {
         dBPatient.setPhone(updatePatient.getPhone());
         log.debug("service : update patient : " + updatePatient);
         return patientRepository.save(dBPatient);
-    }
-
-    /**
-     * Supprime un patient dans la base de donnée par son ID
-     */
-    @Override
-    public void deletePatient(long id) {
-        Patient patient = getById(id);
-        patientRepository.deleteById(patient.getId());
-        log.debug("service : delete patient by id : " + id);
     }
 
     /**

@@ -62,16 +62,6 @@ public class HistoryServiceImpl implements HistoryService {
     }
 
     /**
-     * Supprime un historique par ID
-     */
-    @Override
-    public void deleteNote(String id) {
-        Note note = getById(id);
-        historyRepository.deleteById(note.getId());
-        log.debug("service : delete note by id : " + id);
-    }
-
-    /**
      * Récupère un historique par ID
      */
     private Note getById(String id) {
