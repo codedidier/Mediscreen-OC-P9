@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="82a168bf-b8f7-42b8-9498-8258ab24ee50" name="Changes" comment="Development du micro service msassess et du front pour le calcul du risque" />
+    <list default="true" id="82a168bf-b8f7-42b8-9498-8258ab24ee50" name="Changes" comment="micro service msassess fonctionnel commit avant merge avec main">
+      <change afterPath="$PROJECT_DIR$/uiaccess/src/main/java/com/codedidier/uiaccess/config/SwaggerConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/msassess/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/msassess/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mshistory/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mshistory/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mspatient/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mspatient/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uiaccess/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/uiaccess/pom.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -69,6 +76,7 @@
       <recent name="C:\Users\didie\git\Mediscreen-OC-P9\target" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.codedidier.uiaccess.config" />
       <recent name="com.codedidier.msassess.dto" />
       <recent name="com.codedidier.mspatient.dto" />
     </key>
@@ -126,8 +134,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="All in msassess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="msassess" />
+    <configuration name="All in Mediscreen-OC-P9" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Mediscreen-OC-P9" />
       <option name="PACKAGE_NAME" value="" />
       <option name="TEST_OBJECT" value="package" />
       <method v="2">
@@ -137,10 +145,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.MsassessApplication" />
-        <item itemvalue="JUnit.All in msassess" />
         <item itemvalue="Application.MshistoryApplication" />
         <item itemvalue="Application.MspatientApplication" />
         <item itemvalue="Application.UiaccessApplication" />
+        <item itemvalue="JUnit.All in Mediscreen-OC-P9" />
       </list>
     </recent_temporary>
   </component>
@@ -202,7 +210,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669195008181</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="micro service msassess fonctionnel commit avant merge avec main">
+      <created>1669195126028</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1669195126028</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -223,7 +238,8 @@
     <MESSAGE value="Corrections mineures" />
     <MESSAGE value="Ajout du micro service MsAssess pour l'évaluation des risques" />
     <MESSAGE value="Development du micro service msassess et du front pour le calcul du risque" />
-    <option name="LAST_COMMIT_MESSAGE" value="Development du micro service msassess et du front pour le calcul du risque" />
+    <MESSAGE value="micro service msassess fonctionnel commit avant merge avec main" />
+    <option name="LAST_COMMIT_MESSAGE" value="micro service msassess fonctionnel commit avant merge avec main" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
