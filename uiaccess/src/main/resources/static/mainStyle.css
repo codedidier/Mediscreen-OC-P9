@@ -47,6 +47,10 @@ h2 {
     margin: 0;
     padding: 1em 0 0;
 }
+.border1
+{
+    border: 4px double;
+}
 .divTitreWithButton {
     margin: 0;
     padding: 1em 0 0;
@@ -131,4 +135,7 @@ td {
  }
 .col80 {
     width: 80%;
+}
+span {
+    font-weight: bold;
 }

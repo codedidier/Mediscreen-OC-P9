@@ -39,8 +39,9 @@
       <th  class="col10">Gender</th>
       <th  class="col20">Date of Birth</th>
       <th  class="col20">Phone Number</th>
-      <th  class="col50">Address</th>
+      <th  class="col40">Address</th>
       <th  class="col20">Voir les notes</th>
+      <th  class="col20">Calcul du risque</th>
 
     </tr>
     </thead>
@@ -58,6 +59,9 @@
       <td th:text="${patient.address}"></td>
       <td>
         <a class="btn btn-primary col-12" type="" th:href="@{/history/{id}(id=${patient.id})}">Voir les notes</a>
+      </td>
+      <td>
+        <a class="btn btn-danger col-16" type="" th:href="@{/result/{id}(id=${patient.id})}">Calcul risque</a>
       </td>
     </tr>
     </tbody>

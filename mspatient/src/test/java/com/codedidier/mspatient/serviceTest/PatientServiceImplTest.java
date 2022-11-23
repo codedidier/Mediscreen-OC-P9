@@ -4,7 +4,6 @@ import com.codedidier.mspatient.entity.Patient;
 import com.codedidier.mspatient.repository.PatientRepository;
 import com.codedidier.mspatient.service.PatientServiceImpl;
 import org.junit.jupiter.api.Test;
-import org.mockito.Mock;
 import org.springframework.boot.test.context.SpringBootTest;
 
 import java.util.ArrayList;

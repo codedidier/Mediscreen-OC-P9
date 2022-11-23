@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+            crossorigin="anonymous"
+    >
+    <link rel="stylesheet" href="../mainStyle.css" />
+    <title>Result - Mediscreen </title>
+</head>
+<body>
+<section>
+    <!-- First Block -->
+    <nav id="navMenu" class="navbar navbar-expand-lg navbar-light bg-white p-0 m-0">
+        <div class="flex-row-reverse">
+            <img class="m-0 width-0" src="../Logo_Mediscreen.jpeg" alt="" width="300">
+        </div>
+    </nav>
+    <!-- Home / Transfer -->
+    <div id="navBar" class="navbar-expand-lg p-5 position-relative">
+        <h1 class="position-absolute top-50 start-50 translate-middle" >Résultat du risque Mediscreen</h1>
+    </div>
+</section>
+<main th:object="${dto}">
+    <div class=" text-center">
+        <div>
+            <p>Le patient : <span th:text="${dto.firstName} + ' ' + ${dto.lastName}"></span>, est-il à risque:</p>
+        </div>
+        <div>
+            <p class="border1 border-warning" ><span th:text="${dto.assess}"></span></p>
+        </div>
+
+        <a class="btn btn-outline-success" type="" th:href="@{/home}">Liste des patients</a>
+    </div>
+</main>
+
+</body>
+</html>
