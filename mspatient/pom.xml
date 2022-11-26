@@ -12,6 +12,7 @@
 	<groupId>com.codedidier</groupId>
 	<artifactId>mspatient</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<packaging>jar</packaging>
 	<name>mspatient</name>
 	<description>Mediscreen : micro Service patient</description>
 	<url>http://localhost:8081/</url>

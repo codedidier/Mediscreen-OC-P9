@@ -1,0 +1,110 @@
+version: "3.3"
+
+services:
+  #-------------------mspatient
+  mysql:
+    image: mysql:8
+    container_name: mysql
+    restart: always
+    environment:
+      MYSQL_PASSWORD: "rootroot"
+      MYSQL_ROOT_PASSWORD: "rootroot"
+      MYSQL_DATABASE: "patient"
+    ports:
+      - "3308:3306"
+
+    networks:
+      - mediscreen-net
+
+  patient:
+    build: mspatient/.
+    container_name: patient_ms
+    restart: always
+    depends_on:
+      - mysql
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:mysql://mysql:3306/patient
+      SPRING_DATASOURCE_USERNAME: "root"
+      SPRING_DATASOURCE_PASSWORD: "rootroot"
+    ports:
+      - "8081:8081"
+    networks:
+      - mediscreen-net
+
+  #---------------------mshistory
+  mongodb:
+    image: mongo
+    container_name: mongodb
+    restart: always
+#    volumes:
+#      - mongo_db_data:/data/db
+#      - mongo_config:/data/configdb
+    environment:
+        - MONGO_INITDB_ROOT_USERNAME=root
+        - MONGO_INITDB_ROOT_PASSWORD=rootroot
+        - MONGO_INITDB_DATABASE=mediscreen_history_db
+    ports:
+      - "27018:27017"
+    networks:
+      - mediscreen-net
+
+  history:
+    build: mshistory/.
+    container_name: mshistory
+    restart: always
+    depends_on:
+      - mongodb
+    environment:
+      SPRING_DATA_MONGODB_HOST: mongodb
+      SPRING_DATA_MONGODB_USERNAME: root
+      SPRING_DATA_MONGODB_PASSWORD: rootroot
+      SPRING_DATA_MONGODB_DATABASE: mediscreen_history_db
+      SPRING_DATA_MONGODB_AUTHENTICATION-DATABASE: admin
+    ports:
+      - "8082:8082"
+    networks:
+      - mediscreen-net
+
+  # ------------------------msassess
+  assess:
+    build: msassess/.
+    container_name: assess_ms
+    restart: always
+    depends_on:
+      - patient
+      - history
+    environment:
+      - PROXY_PATIENT=patient:8081
+      - PROXY_HISTORY=history:8082
+      - PROXY_FRONT=front:8080
+    ports:
+      - "8083:8083"
+    networks:
+      - mediscreen-net
+
+  # -------------------------FRONT
+  front:
+    build: uiaccess/.
+    container_name: ui_access
+    restart: always
+    depends_on:
+      - patient
+      - history
+      - assess
+    environment:
+      - PROXY_PATIENT=patient:8081
+      - PROXY_HISTORY=history:8082
+      - PROXY_ASSESS=assess:8083
+
+    ports:
+      - "8080:8080"
+    networks:
+      - mediscreen-net
+
+networks:
+  mediscreen-net:
+    driver: bridge
+
+# volumes:
+#  mongo_db_data: {}
+#  mongo_config: {}

@@ -4,7 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="82a168bf-b8f7-42b8-9498-8258ab24ee50" name="Changes" comment="Tous les micro-services sont fonctionnels.&#10;Changement de version de 11 vers 1.8 pour JaCoCo" />
+    <list default="true" id="82a168bf-b8f7-42b8-9498-8258ab24ee50" name="Changes" comment="Tous les micro-services sont fonctionnels.&#10;Changement de version de 11 vers 1.8 pour JaCoCo">
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/msassess_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/msassess/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mshistory/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mspatient/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uiaccess/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mshistory/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mshistory/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mspatient/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mspatient/pom.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -48,21 +58,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/Users/didie/git/Mediscreen-OC-P9/uiaccess/src/test/java",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.runner"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/didie/git/Mediscreen-OC-P9/uiaccess/src/test/java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.new.ui&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\didie\git\Mediscreen-OC-P9\uiaccess\src\test\java" />
@@ -85,7 +95,7 @@
       <recent name="com.codedidier.mspatient.dto" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.MshistoryApplication">
+  <component name="RunManager" selected="Application.MspatientApplication">
     <configuration name="MsassessApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.codedidier.msassess.MsassessApplication" />
       <module name="msassess" />
@@ -138,21 +148,34 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="All in uiaccess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="uiaccess" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="TEST_OBJECT" value="package" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+    <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
+      <deployment type="docker-compose.yml" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="docker-deploy" factoryName="dockerfile" temporary="true">
+      <deployment type="dockerfile" />
+      <method v="2" />
+    </configuration>
+    <configuration name="docker-compose.yml.patient: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="patient" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.MshistoryApplication" />
-        <item itemvalue="Application.UiaccessApplication" />
         <item itemvalue="Application.MspatientApplication" />
+        <item itemvalue="Application.MshistoryApplication" />
         <item itemvalue="Application.MsassessApplication" />
-        <item itemvalue="JUnit.All in uiaccess" />
+        <item itemvalue="Application.UiaccessApplication" />
+        <item itemvalue="Docker.docker-compose.yml.patient: Compose Deployment" />
       </list>
     </recent_temporary>
   </component>
@@ -235,7 +258,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669451988247</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Tous les micro-services sont fonctionnels.&#10;Changement de version de 11 vers 1.8 pour JaCoCo">
+      <created>1669452045253</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1669452045253</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -259,7 +289,8 @@
     <MESSAGE value="micro service msassess fonctionnel commit avant merge avec main" />
     <MESSAGE value="corrections mineures" />
     <MESSAGE value="Tous les micro-services sont fonctionnels.&#10;Changement de version de 11 vers 1.8 pour JaCoCo" />
-    <option name="LAST_COMMIT_MESSAGE" value="Tous les micro-services sont fonctionnels.&#10;Changement de version de 11 vers 1.8 pour JaCoCo" />
+    <MESSAGE value="Docker avec Docker-compose.yml tout fonctionne" />
+    <option name="LAST_COMMIT_MESSAGE" value="Docker avec Docker-compose.yml tout fonctionne" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
@@ -273,10 +304,10 @@
     <select />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Mediscreen_OC_P9$All_in_mspatient.ic" NAME="All in mspatient Coverage Results" MODIFIED="1668590340118" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/Mediscreen_OC_P9$All_in_mspatient__1_.ic" NAME="All in mspatient (1) Coverage Results" MODIFIED="1668704430967" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/Mediscreen_OC_P9$controller_saveNote.ic" NAME="controller.saveNote Coverage Results" MODIFIED="1668783025390" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.codedidier.mshistory.controller.*</FILTER>
     </SUITE>
+    <SUITE FILE_PATH="coverage/Mediscreen_OC_P9$All_in_mspatient.ic" NAME="All in mspatient Coverage Results" MODIFIED="1668590340118" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
