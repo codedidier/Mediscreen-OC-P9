@@ -4,42 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="82a168bf-b8f7-42b8-9498-8258ab24ee50" name="Changes" comment="corrections mineures">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_beust_jcommander_1_82.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_findbugs_jsr305_3_0_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_testng_testng_7_6_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_webjars_jquery_3_6_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/msassess/lombok.config" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mshistory/lombok.config" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mspatient/lombok.config" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uiaccess/lombok.config" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uiaccess/src/test/java/com/codedidier/uiaccess/UiaccessApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Mediscreen-OC-P9.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Mediscreen-OC-P9.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_openfeign_3_1_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/msassess/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/msassess/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/msassess/src/main/java/com/codedidier/msassess/constants/Triggers.java" beforeDir="false" afterPath="$PROJECT_DIR$/msassess/src/main/java/com/codedidier/msassess/constants/Triggers.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/msassess/src/main/java/com/codedidier/msassess/model/RiskLevelsEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/msassess/src/main/java/com/codedidier/msassess/model/RiskLevelsEnum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/msassess/src/main/java/com/codedidier/msassess/service/AssessServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/msassess/src/main/java/com/codedidier/msassess/service/AssessServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mshistory/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mshistory/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mspatient/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mspatient/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/dependency-convergence.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/dependency-convergence.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/dependency-info.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/dependency-info.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/dependency-management.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/dependency-management.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/distribution-management.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/distribution-management.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/modules.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/modules.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/plugin-management.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/plugin-management.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/plugins.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/plugins.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/project-info.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/project-info.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/summary.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uiaccess/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/uiaccess/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uiaccess/src/main/java/com/codedidier/uiaccess/controller/HistoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/uiaccess/src/main/java/com/codedidier/uiaccess/controller/HistoryController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uiaccess/src/main/java/com/codedidier/uiaccess/controller/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/uiaccess/src/main/java/com/codedidier/uiaccess/controller/HomeController.java" afterDir="false" />
-    </list>
+    <list default="true" id="82a168bf-b8f7-42b8-9498-8258ab24ee50" name="Changes" comment="Tous les micro-services sont fonctionnels.&#10;Changement de version de 11 vers 1.8 pour JaCoCo" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -263,7 +228,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669216675349</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Tous les micro-services sont fonctionnels.&#10;Changement de version de 11 vers 1.8 pour JaCoCo">
+      <created>1669451988247</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1669451988247</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -286,7 +258,8 @@
     <MESSAGE value="Development du micro service msassess et du front pour le calcul du risque" />
     <MESSAGE value="micro service msassess fonctionnel commit avant merge avec main" />
     <MESSAGE value="corrections mineures" />
-    <option name="LAST_COMMIT_MESSAGE" value="corrections mineures" />
+    <MESSAGE value="Tous les micro-services sont fonctionnels.&#10;Changement de version de 11 vers 1.8 pour JaCoCo" />
+    <option name="LAST_COMMIT_MESSAGE" value="Tous les micro-services sont fonctionnels.&#10;Changement de version de 11 vers 1.8 pour JaCoCo" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
