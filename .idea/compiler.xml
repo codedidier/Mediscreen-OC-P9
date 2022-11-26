@@ -14,11 +14,11 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="11">
-      <module name="Mediscreen-OC-P9" target="11" />
-      <module name="msassess" target="11" />
-      <module name="mshistory" target="11" />
-      <module name="mspatient" target="11" />
-      <module name="uiaccess" target="11" />
+      <module name="Mediscreen-OC-P9" target="1.8" />
+      <module name="msassess" target="1.8" />
+      <module name="mshistory" target="1.8" />
+      <module name="mspatient" target="1.8" />
+      <module name="uiaccess" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">

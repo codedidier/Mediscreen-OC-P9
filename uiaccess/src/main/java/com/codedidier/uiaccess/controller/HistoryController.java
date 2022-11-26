@@ -14,6 +14,9 @@ import org.springframework.web.bind.annotation.*;
 import javax.validation.Valid;
 import java.util.List;
 
+/**
+ * Interface HTTP REST du microservice "mshistory"
+ */
 @Controller
 public class HistoryController {
 
@@ -25,6 +28,9 @@ public class HistoryController {
         this.historyProxy = historyProxy;
     }
 
+    /**
+     * Récupère une note par son ID
+     */
     @GetMapping("/history/{id}")
     public String historyPage(@PathVariable long id, Model model) {
 
@@ -42,6 +48,9 @@ public class HistoryController {
         return "history/history";
     }
 
+    /**
+     * Ajoute une note à un patient
+     */
     @GetMapping("/history/newNote/{id}")
     public String getForm(@PathVariable long id, Model model) {
         PatientModel patient = patientProxy.getPatientById(id);
@@ -59,6 +68,12 @@ public class HistoryController {
 
         return "redirect:history/"+dto.getPatientId();
     }
+
+    /**
+     * Update une note
+     * @param id
+     * @param model
+     */
     @GetMapping("/noteUpdate/{id}")
     public String getForm(@PathVariable String id, Model model) {
         HistoryModel note = historyProxy.getNoteById(id);

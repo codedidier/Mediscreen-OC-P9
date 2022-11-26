@@ -55,7 +55,7 @@ public class AssessServiceImpl implements AssessService{
     public int getTriggersOccurrences(List<HistoryModel> notes) {
         int termsCount = 0;
         for(HistoryModel historyModel : notes) {
-            for(String trigger :  Triggers.TRIGGERS) {
+            for(String trigger : Triggers.TRIGGERS) {
 
                 if (historyModel.getRecommendation().toLowerCase().contains(trigger)) {
                     termsCount++;

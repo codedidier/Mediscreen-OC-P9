@@ -11,6 +11,9 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 
+/**
+ * Interface HTTP REST de la page d'accueil"
+ */
 @Controller
 public class HomeController {
 
@@ -22,6 +25,9 @@ public class HomeController {
         this.assessProxy = assessProxy;
     }
 
+    /**
+     * Get home page.
+     */
     @GetMapping("/home")
     public String home(Model model) {
         HomeDto dto = new HomeDto();
@@ -30,6 +36,9 @@ public class HomeController {
         return "home/home";
     }
 
+    /**
+     * Get page de résultat du risque
+     */
     @GetMapping("/result/{id}")
     public String result(@PathVariable long id, Model model) {
         PatientModel patient = patientProxy.getPatientById(id);
