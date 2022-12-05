@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="82a168bf-b8f7-42b8-9498-8258ab24ee50" name="Changes" comment="" />
+    <list default="true" id="82a168bf-b8f7-42b8-9498-8258ab24ee50" name="Changes" comment="Merging branch dev_docker (docker fonctionne)">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -85,7 +87,7 @@
       <recent name="com.codedidier.mspatient.dto" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.MshistoryApplication">
+  <component name="RunManager" selected="Application.UiaccessApplication">
     <configuration name="MsassessApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.codedidier.msassess.MsassessApplication" />
       <module name="msassess" />
@@ -148,10 +150,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.MshistoryApplication" />
         <item itemvalue="Application.UiaccessApplication" />
         <item itemvalue="Application.MspatientApplication" />
         <item itemvalue="Application.MsassessApplication" />
+        <item itemvalue="Application.MshistoryApplication" />
         <item itemvalue="JUnit.All in uiaccess" />
       </list>
     </recent_temporary>
@@ -235,7 +237,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669451988247</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Merging branch dev_docker (docker fonctionne)">
+      <created>1670244034418</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1670244034418</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -259,7 +268,8 @@
     <MESSAGE value="micro service msassess fonctionnel commit avant merge avec main" />
     <MESSAGE value="corrections mineures" />
     <MESSAGE value="Tous les micro-services sont fonctionnels.&#10;Changement de version de 11 vers 1.8 pour JaCoCo" />
-    <option name="LAST_COMMIT_MESSAGE" value="Tous les micro-services sont fonctionnels.&#10;Changement de version de 11 vers 1.8 pour JaCoCo" />
+    <MESSAGE value="Merging branch dev_docker (docker fonctionne)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merging branch dev_docker (docker fonctionne)" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
