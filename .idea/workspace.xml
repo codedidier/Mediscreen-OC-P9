@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="82a168bf-b8f7-42b8-9498-8258ab24ee50" name="Changes" comment="Tous les micro-services sont fonctionnels.&#10;Changement de version de 11 vers 1.8 pour JaCoCo">
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_beust_jcommander_1_82.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_findbugs_jsr305_3_0_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_testng_testng_7_6_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_webjars_jquery_3_6_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="82a168bf-b8f7-42b8-9498-8258ab24ee50" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -91,7 +85,7 @@
       <recent name="com.codedidier.mspatient.dto" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.UiaccessApplication">
+  <component name="RunManager" selected="Application.MshistoryApplication">
     <configuration name="MsassessApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.codedidier.msassess.MsassessApplication" />
       <module name="msassess" />
@@ -154,10 +148,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MshistoryApplication" />
         <item itemvalue="Application.UiaccessApplication" />
         <item itemvalue="Application.MspatientApplication" />
         <item itemvalue="Application.MsassessApplication" />
-        <item itemvalue="Application.MshistoryApplication" />
         <item itemvalue="JUnit.All in uiaccess" />
       </list>
     </recent_temporary>
@@ -241,14 +235,7 @@
       <option name="project" value="LOCAL" />
       <updated>1669451988247</updated>
     </task>
-    <task id="LOCAL-00011" summary="Tous les micro-services sont fonctionnels.&#10;Changement de version de 11 vers 1.8 pour JaCoCo">
-      <created>1669452045253</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1669452045253</updated>
-    </task>
-    <option name="localTasksCounter" value="12" />
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -286,10 +273,10 @@
     <select />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Mediscreen_OC_P9$All_in_mspatient.ic" NAME="All in mspatient Coverage Results" MODIFIED="1668590340118" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/Mediscreen_OC_P9$All_in_mspatient__1_.ic" NAME="All in mspatient (1) Coverage Results" MODIFIED="1668704430967" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/Mediscreen_OC_P9$controller_saveNote.ic" NAME="controller.saveNote Coverage Results" MODIFIED="1668783025390" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.codedidier.mshistory.controller.*</FILTER>
     </SUITE>
+    <SUITE FILE_PATH="coverage/Mediscreen_OC_P9$All_in_mspatient.ic" NAME="All in mspatient Coverage Results" MODIFIED="1668590340118" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
